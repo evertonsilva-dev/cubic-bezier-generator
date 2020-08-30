@@ -12,7 +12,7 @@ export default function BezierController() {
     x2: number;
     y2: number;
   }
-  const [bezier, setBezier] = useState<iBezier>({ x1: 0, y1: 0, x2: 0, y2: 0 });
+  const [bezier, setBezier] = useState<iBezier>({ x1: 0.35, y1: 0.22, x2: 0.88, y2: 0.1 });
 
   return (
     <BezierContainer>
@@ -27,7 +27,7 @@ export default function BezierController() {
         <div className="cont-input">
           <label htmlFor="x1">x1: {bezier.x1}</label>
           <Slider
-            defaultValue={bezier.x1}
+            defaultValue={bezier.x1 * 100}
             ValueLabelComponent={ValueLabelComponent}
             aria-label="custom thumb label"
             id="x1"
@@ -39,7 +39,7 @@ export default function BezierController() {
         <div className="cont-input">
           <label htmlFor="y1">y1: {bezier.y1}</label>
           <Slider
-            defaultValue={bezier.y1}
+            defaultValue={bezier.y1 * 100}
             ValueLabelComponent={ValueLabelComponent}
             aria-label="custom thumb label"
             id="y1"
@@ -52,7 +52,7 @@ export default function BezierController() {
         <div className="cont-input">
           <label htmlFor="x2">x2: {bezier.x2}</label>
           <Slider
-            defaultValue={bezier.x2}
+            defaultValue={bezier.x2 * 100}
             ValueLabelComponent={ValueLabelComponent}
             aria-label="custom thumb label"
             id="x2"
@@ -64,7 +64,7 @@ export default function BezierController() {
         <div className="cont-input">
           <label htmlFor="y2">y2: {bezier.y2}</label>
           <Slider
-            defaultValue={bezier.y2}
+            defaultValue={bezier.y2 * 100}
             ValueLabelComponent={ValueLabelComponent}
             aria-label="custom thumb label"
             id="y2"

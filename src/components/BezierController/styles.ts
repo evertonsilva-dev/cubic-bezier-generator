@@ -6,7 +6,6 @@ export const BezierContainer = styled(Card)`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 15px;
-  margin: 0px 20px;
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
   }
@@ -45,6 +44,9 @@ export const AnimationItem = styled.div`
 `;
 export const AnimationController = styled.div`
   padding: 0 15px;
+  .MuiSlider-root {
+    color: ${Secundaria};
+  }
 `;
 export const Bezier = styled.div`
   background-color: ${ClosestBackground};

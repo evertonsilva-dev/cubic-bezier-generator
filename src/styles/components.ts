@@ -73,7 +73,15 @@ export const Card = styled.article`
   min-height: 200px;
   border-radius: 6px;
 `;
-
+export const Title = styled.h1`
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: ${TextColor};
+  padding: 15px 0;
+  text-align: center;
+  &.primario {
+    color: ${Primaria};
+  }
+`;
 export const Subtitle = styled.h2`
   font-size: clamp(1rem, 1vw, 1.5rem);
   color: ${TextColor};

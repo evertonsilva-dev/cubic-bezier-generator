@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     margin:0;
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
-    overflow:hidden;
+    overflow-x:hidden;
     &:before{
       content:"";
       position: absolute;

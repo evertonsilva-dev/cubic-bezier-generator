@@ -1,11 +1,14 @@
 import React from 'react';
 import BezierController from 'src/components/BezierController';
-import { HomeContainer } from './styles';
-
+import { Title } from 'src/styles/components';
+import { Cont, HomeContainer } from './styles';
 export default function Home() {
   return (
     <HomeContainer>
-      <BezierController />
+      <Cont>
+        <Title>Cubic-Bezier Generator</Title>
+        <BezierController />
+      </Cont>
     </HomeContainer>
   );
 }

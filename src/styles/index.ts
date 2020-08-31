@@ -29,10 +29,10 @@ const GlobalStyle = createGlobalStyle`
   }
   @keyframes animate {
     from{
-      transform:translateY(0);
+      bottom:0;
     }
     to{
-      transform:translateY(-100px);
+      bottom:calc(100% - 60px);
     }
   }
 `;

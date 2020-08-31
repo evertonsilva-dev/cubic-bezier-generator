@@ -4,12 +4,12 @@ import { createGlobalStyle } from 'styled-components';
 import { FuhthestBackground, Secundaria, TextColor } from './components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,400&family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
   body{
     background-color: ${FuhthestBackground};
     color:${TextColor};
     margin:0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Quantico', sans-serif;
     position: relative;
     overflow-x:hidden;
     &:before{
@@ -34,6 +34,11 @@ const GlobalStyle = createGlobalStyle`
     to{
       bottom:calc(100% - 60px);
     }
+  }
+
+  #ninja{
+    color:black;
+    visibility:hidden;
   }
 `;
 export default GlobalStyle;

@@ -63,7 +63,8 @@ export const ButtonOutline = styled(Button)`
 `;
 export const Container = styled.div`
   display: flex;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   width: 100vw;
 `;
 export const Card = styled.article`
